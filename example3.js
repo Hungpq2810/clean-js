@@ -9,3 +9,13 @@ getData(function(a) {
     });
   });
 });
+
+async function fetchData() {
+  let a = await getData();
+  let b = await parseData(a);
+  let c = await processData(b);
+  await displayData(c);
+  console.log("Done");
+}
+
+fetchData();

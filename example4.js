@@ -1,13 +1,14 @@
 // Sử dụng function để đóng gói logic và giảm lặp code
+function handleEnv() {
+  const env = process.env.NODE_ENV;
 
-console.log('Starting process...');
-if (process.env.NODE_ENV === 'development') {
-  console.log('development mode');
-  // Development-specific logic
-}
-if (process.env.NODE_ENV === 'production') {
-  console.log('production mode');
-  // Production-specific logic
+  if (env === "development") {
+    console.log("development mode");
+  } else if (env === "production") {
+    console.log("production mode");
+  }
 }
 
-console.log('Process started.');
+console.log("Starting process...");
+handleEnv();
+console.log("Process started.");

@@ -4,4 +4,8 @@ let value = "123";
 
 if (value == 123) {
   console.log('The comparison is true!');
+} else {
+  console.log("The comparison is false!");
 }
+
+//
